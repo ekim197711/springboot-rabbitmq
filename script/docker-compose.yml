@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
   rabbitmq-demo:
@@ -22,7 +22,7 @@ services:
     image: datadog/agent:latest
     environment:
       - DD_SITE=datadoghq.eu
-      - DD_API_KEY=07b8eff7cefd58e2d19373dc1c6c8791
+      - DD_API_KEY=FILL_IN_THIS_VALUE_WITH_YOUR_OWN_KEY
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
       - DD_AC_EXCLUDE=name:datadog-agent
@@ -35,7 +35,3 @@ services:
 volumes:
   rabbitmq:
     driver: local
-
-#networks:
-#  frontend:
-#    driver: custom-driver-1
