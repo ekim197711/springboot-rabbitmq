@@ -1,0 +1,2 @@
+
+DOCKER_CONTENT_TRUST=1 docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=07b8eff7cefd58e2d19373dc1c6c8791 -e DD_SITE="datadoghq.eu" datadog/agent:latest
